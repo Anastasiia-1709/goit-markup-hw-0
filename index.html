@@ -53,7 +53,14 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>Order Service</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button data-modal-close class="close-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><circle cx="12" cy="12" r="12" fill="#E7E9FC"/><circle cx="12" cy="12" r="11.5" stroke="#000" stroke-opacity=".1"/><g clip-path="url(#a)"><path fill="#000" d="M16 8.806 15.194 8 12 11.194 8.806 8 8 8.806 11.194 12 8 15.194l.806.806L12 12.806 15.194 16l.806-.806L12.806 12 16 8.806Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M8 8h8v8H8z"/></clipPath></defs></svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -432,5 +439,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
